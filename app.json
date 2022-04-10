@@ -17,13 +17,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to send pictures or create a new profile photo.",
+        "NSPhotoLibraryAddUsageDescription": "User can download documents that were previously uploaded by company",
+        "NSPhotoLibraryUsageDescription": "User can upload Photos/Documents to be seen by his/her company",
+        "NSLocationAlwaysUsageDescription": "Location is required to find out where you are",
+        "NSLocationWhenInUseUsageDescription": "dsadasdfasfdadsfad",
+        "NSLocationUsageDescription": "Location is required to find out where you are",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ],
+        "CFBundleAllowMixedLocalizations": true
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
